@@ -1,0 +1,9 @@
+{
+    "tenantId": "72012ed3-0a4f-45f8-ac16-f051a207895b",
+    "startDate": "2016-02-12",
+    "cycleType": "month",
+    "daysFromEndDateToSubmitDeadline": 4,
+    "allowSubmitBeforeEndDate": false,
+    "daysAllowSubmitAfterDeadline": 4,
+    "daysFromSubmitDeadlineToSubmitDeadline": 4
+}

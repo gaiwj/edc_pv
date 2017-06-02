@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link rel="import" href="../base/_header_css.html?__inline">
+</head>
+<body>
+<link rel="import" href="../base/header.html?__inline">
+<div class="content">
+    <div class="position">当前位置：
+        <span >系统管理</span>
+        <span style="padding: 0 5px;">&gt;</span>
+        <span >规则配置</span>
+    </div>
+    <div >
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation"  onclick="initRuleConfigList()"><a href="#RuleConfigTab" aria-controls="RuleConfigTab" role="tab" data-toggle="tab" >规则配置</a></li>
+            <li role="presentation"  onclick="initAgeConfigList()"><a href="#AgeConfigTab" aria-controls="AgeConfigTab" role="tab" data-toggle="tab" >年龄层配置</a></li>
+        </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade" id="RuleConfigTab">
+                <table id="tabPageList"></table>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="AgeConfigTab">
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="text-align:right">
+                        <button type="button" class="btn btn-sm btn-primary addNewAgeConfig" data-toggle="modal" data-target="#ageConfigModal">新增</button>
+                    </div>
+                    <table id="AgeConfigList"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--新增修改年龄层配置-->
+<div class="modal fade " id="ageConfigModal" tabindex="1" data-backdrop="static" role="dialog" >
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title" id="">年龄层</h4>
+            </div>
+            <div class="popCon">
+                <form id="ageCongigForm" class="clearfix" style="padding:10px 0">
+                    <div class="col-md-12 form-group has-require">
+                        <label class="col-md-4">年龄层:</label>
+                        <div class="col-md-6">
+                            <select name="agedescitemid" id="agedescitemid" class="select2" data-bv-notempty data-bv-notempty-message="必填项">
+                                <option value="">请选择</option>
+                                {{each agedescitem as item}}
+                                <option value="{{item.id}}">{{item.nameChs}}</option>
+                                {{/each}}
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-12 form-group has-require">
+                        <label class="col-md-4">年龄下限 :</label>
+                        <div class="col-md-6">
+                            <input id="agelowerlimit" type="text" class="form-control" name="agelowerlimit" value="" pattern="^\d+$" data-bv-regexp-message="年龄格式不正确"  data-bv-notempty data-bv-notempty-message="必填项">
+                        </div>
+                    </div>
+                    <div class="col-md-12 form-group has-require">
+                        <label class="col-md-4">是否包含 :</label>
+                        <div class="col-md-6">
+                            <input id="equallower" type="checkbox"  name="equallower" value="" >
+                        </div>
+                    </div>
+                    <div class="col-md-12 form-group has-require">
+                        <label class="col-md-4">年龄下限单位 :</label>
+                        <div class="col-md-6">
+                            <select name="lowerunit" id="lowerunit" class="select2" data-bv-notempty data-bv-notempty-message="必填项">
+                                <option value="">请选择</option>
+                                {{each agunititem as item}}
+                                <option value="{{item.id}}">{{item.nameChs}}</option>
+                                {{/each}}
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-12 form-group has-require">
+                        <label class="col-md-4">年龄上限 :</label>
+                        <div class="col-md-6">
+                            <input id="ageupperlimit" type="text" class="form-control" name="ageupperlimit" value="" data-bv-notempty data-bv-notempty-message="必填项" >
+                        </div>
+                    </div>
+                    <div class="col-md-12 form-group has-require">
+                        <label class="col-md-4">是否包含 :</label>
+                        <div class="col-md-6">
+                            <input id="equalupper" type="checkbox"  name="equalupper" value="" >
+                        </div>
+                    </div>
+                    <div class="col-md-12 form-group has-require">
+                        <label class="col-md-4">年龄上限单位 :</label>
+                        <div class="col-md-6">
+                            <select name="upperunit" id="upperunit" class="select2" data-bv-notempty data-bv-notempty-message="必填项">
+                                <option value="">请选择</option>
+                                {{each agunititem as item}}
+                                <option value="{{item.id}}">{{item.nameChs}}</option>
+                                {{/each}}
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-sm saveNewEditAgeConfig">确 定</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 添加当前模板js -->
+<link rel="import" href="../base/footer.html?__inline">
+<link rel="import" href="../base/_footer_js.html?__inline">
+<script src="../../assets/js/pages/systermManage/ruleConfig.js"></script>
+</body>
+</html>

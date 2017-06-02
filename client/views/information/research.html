@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link rel="import" href="../base/_header_css.html?__inline">
+</head>
+<body>
+<link rel="import" href="../base/header.html?__inline">
+
+<div class="content">
+    <div class="position">当前位置：
+        <span >信息维护</span>
+        <span style="padding: 0 5px;">&gt;</span>
+        <span >研究项目</span>
+    </div>
+    <div >
+        <div class="panel panel-default ">
+            <div class="panel-heading" style="text-align: right;">
+                <button type="button" class="btn btn-primary btn-sm addNewResearch"  data-toggle="modal" data-target="#modalManual" >新增</button>
+            </div>
+            <table id="researchList"></table>
+        </div>
+    </div>
+</div>
+<!--新增编辑弹窗-->
+<div class="modal fade " id="modalManual" tabindex="1" data-backdrop="static" role="dialog" >
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" style="width:930px">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title" id="">研究项目</h4>
+            </div>
+            <div class="popCon">
+                <form id="form" class="clearfix">
+                    <div class="col-md-6 form-group has-require">
+                        <label class="col-md-6">项目编号 :</label>
+                        <div class="col-md-6">
+                            <input id="itemnumber" type="text" class="form-control has-error" name="itemnumber" value=""  data-bv-notempty data-bv-notempty-message="必填项">
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-group has-require">
+                        <label class="col-md-6">研究方案名称 :</label>
+                        <div class="col-md-6">
+                            <input id="researchtopic" type="text" class="form-control " name="researchtopic" value=""  data-bv-notempty data-bv-notempty-message="必填项">
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label class="col-md-6">其它研究用药 :</label>
+                        <div class="col-md-6">
+                            <input id="medicationstudy" type="text" class="form-control " name="medicationstudy" value=""  >
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label class="col-md-6">申办方 :</label>
+                        <div class="col-md-6">
+                            <input id="sponsor" type="text" class="form-control " name="sponsor" value=""  >
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-group has-require">
+                        <label class="col-md-6">临床研究分类:</label>
+                        <div class="col-md-6">
+                            <select class="select2 " id="researchtype" name="researchtype" data-bv-notempty data-bv-notempty-message="必填项">
+                                <option value="">请选择</option>
+                                <option value="eac36752-1c48-4b36-ae0a-5236a4260673" >上市后研究</option>
+                                <option value="eac36752-1c48-4b36-ae0a-5236a4260673" >上市后研究</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label class="col-md-6">研究类型细分:</label>
+                        <div class="col-md-6">
+                            <select class="select2 " id="researchtypedtlid" name="researchtypedtlid" >
+                                <option value="">请选择</option>
+                                <option value="565662c6-db05-4722-a2fa-0496a4817669" >观察性研究</option>
+                                <option value="565662c6-db05-4722-a2fa-0496a4817669" >观察性研究</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <label class="col-md-3">临床试验适应症:</label>
+                        <div class="col-md-9">
+                            <textarea id="indication " style="height:80px" type="text" class="form-control col-md-12" name="indication" value=""  ></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label class="col-md-6">新药临床研究批准文号:</label>
+                        <div class="col-md-6">
+                            <input id="licencenumber" type="text" class="form-control " name="licencenumber" value=""  >
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 form-group">
+                        <label class="col-md-6">研究设计:</label>
+                        <div class="col-md-6">
+                            <select class="select2 " id="studydesignid" name="studydesignid" >
+                                <option value="">请选择</option>
+                                <option value="b0b315fe-c9a6-4244-aa89-82fafc37878f">开放</option>
+                                <option value="b0b315fe-c9a6-4244-aa89-82fafc37878f">开放</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label class="col-md-6">开始日期:</label>
+                        <div class="col-md-6">
+                            <input id="researchbegindate" type="text" class="form-control  timePicker" name="researchbegindate" value=""  >
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label class="col-md-6">结束日期:</label>
+                        <div class="col-md-6">
+                            <input id="researchenddate" type="text" class="form-control  timePicker" name="researchenddate" value=""  >
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label class="col-md-6">药品分类:</label>
+                        <div class="col-md-6">
+                            <input id="flagtype" type="text" class="form-control " name="flagtype" value=""  >
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label class="col-md-6">注册分类:</label>
+                        <div class="col-md-6">
+                            <input id="regclass" type="text" class="form-control " name="regclass" value=""  >
+                        </div>
+                    </div>
+                </form>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion"href="#collapse2">药品名称</a>
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <table id="drugTable">
+                                <thead>
+                                <tr>
+                                    <th data-field="">选择</th>
+                                    <th data-field="">上市前/后	</th>
+                                    <th data-field="">通用名称</th>
+                                    <th data-field="">商品名称</th>
+                                    <th data-field="" >批准文号</th>
+                                    <th data-field="" >剂型</th>
+                                    <th data-field="" >规格</th>
+                                    <th data-field="" >活性成分</th>
+                                </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-sm saveNewResearch">确 定</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 添加当前模板js -->
+<link rel="import"  href="../base/footer.html?__inline">
+<link rel="import" href="../base/_footer_js.html?__inline">
+<script src="../assets/js/pages/information/research.js"></script>
+</body>
+</html>

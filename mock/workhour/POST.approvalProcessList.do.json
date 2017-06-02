@@ -1,0 +1,55 @@
+{
+  "userList": [{
+    "id": 1,
+    "tenantId": "72012ed3-0a4f-45f8-ac16-f051a207895b",
+    "approvalSubmitId": 1,
+    "approvalSubmitUser": "2",
+    "approvalProcessUser": "2",
+    "approvalProcessRole": "5",
+    "approvalProcessMode": "7",
+    "approvalProcessOper": "1",
+    "approvalProcessStatus": "4",
+    "approvalProcessTxt": "3",
+    "approvalProcessPwd": "6"
+  },{
+    "id": 1,
+    "tenantId": "72012ed3-0a4f-45f8-ac16-f051a207895b",
+    "approvalSubmitId": 1,
+    "approvalSubmitUser": "3",
+    "approvalProcessUser": "3",
+    "approvalProcessRole": "4",
+    "approvalProcessMode": "7",
+    "approvalProcessOper": "1",
+    "approvalProcessStatus": "4",
+    "approvalProcessTxt": "3",
+    "approvalProcessPwd": "6"
+  },{
+    "id": 2,
+    "tenantId": "72012ed3-0a4f-45f8-ac16-f051a207895b",
+    "approvalSubmitId": 1,
+    "approvalSubmitUser": "21",
+    "approvalProcessUser": "21",
+    "approvalProcessRole": "4",
+    "approvalProcessMode": "7",
+    "approvalProcessOper": "1",
+    "approvalProcessStatus": "4",
+    "approvalProcessTxt": "3",
+    "approvalProcessPwd": "6"
+  }
+  ,{
+      "id": 2,
+      "tenantId": "72012ed3-0a4f-45f8-ac16-f051a207895b",
+      "approvalSubmitId": 1,
+      "approvalSubmitUser": "22",
+      "approvalProcessUser": "22",
+      "approvalProcessRole": "4",
+      "approvalProcessMode": "7",
+      "approvalProcessOper": "1",
+      "approvalProcessStatus": "4",
+      "approvalProcessTxt": "3",
+      "approvalProcessPwd": "6"
+    }
+  ],
+  "referencedType": "workperiodsheet",
+  "referencedId": 1
+}

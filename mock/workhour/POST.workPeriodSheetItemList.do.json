@@ -1,0 +1,59 @@
+[{
+  "projectId": "a3ee35f925994ac98e9fa7270082155e",
+  "taskConfigCharge": true,
+  "taskConfigId": "1",
+  "taskConfigName": "重组抗dfdf地方都是",
+  "taskArea": "北京1",
+  "taskPosition": "经理",
+  "taskHours":[1,null,null,10,null,null,3,2,1,1,2,3,1,2,4,1]
+},{
+  "projectId": "b3ee35f925994ac98e9fa7270082155e",
+  "taskConfigCharge": false,
+  "taskConfigId": "2",
+  "taskConfigName": "重组抗1",
+  "taskArea": "北京1",
+  "taskPosition": "经理",
+  "taskHours":[1,null,null,10,null,null,3,2,1,1,2,3,1,2,4,1]
+},{
+  "projectId": "c3ee35f925994ac98e9fa7270082155e",
+  "taskConfigCharge": true,
+  "taskConfigId": "3",
+  "taskConfigName": "重组抗2",
+  "taskArea": "北京1",
+  "taskPosition": "经理",
+  "taskHours":[1,null,null,10,null,null,3,2,1,1,2,3,1,2,4,1]
+},{
+  "projectId": "d3ee35f925994ac98e9fa7270082155e",
+  "taskConfigCharge": true,
+  "taskConfigId": "4",
+  "taskConfigName": "重组抗3",
+  "taskArea": "北京1",
+  "taskPosition": "经理",
+  "taskHours":[1,null,null,10,null,null,3,2,1,1,2,3,1,2,4,1]
+},{
+  "projectId": "d3ee35f925994ac98e9fa7270082155e",
+  "taskConfigCharge": false,
+  "taskConfigId": "5",
+  "taskConfigName": "重组抗4",
+  "taskArea": "北京1",
+  "taskPosition": "经理",
+  "taskHours":[1,null,null,10,null,null,3,2,1,1,2,3,1,2,4,1]
+},{
+  "projectId": "b3ee35f925994ac98e9fa7270082155e",
+  "taskConfigCharge": true,
+  "taskConfigId": "1",
+  "taskConfigName": "重组抗",
+  "taskArea": "北京1",
+  "taskPosition": "经理",
+  "taskHours":[1,null,null,10,null,null,3,2,1,1,2,3,1,2,4,1]
+}
+,{
+  "projectId": "a3ee35f925994ac98e9fa7270082155e",
+  "taskConfigCharge": true,
+  "taskConfigId": "1",
+  "taskConfigName": "重组抗2",
+  "taskArea": "北京2",
+  "taskPosition": "经理dd",
+  "taskHours":[1,null,null,10,null,null,3,2,1,1,2,3,1,2,4,1]
+}
+]

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="keywords" content="太美医疗">
+    <meta name="description" content="药物安全管理系统">
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
+    <!-- Font CSS-->
+    <link type="text/css" rel="stylesheet" href="../assets/font/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/base.less"/>
+    <link type="text/css" rel="stylesheet" href="../../assets/libs/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/pages/login.less" />
+</head>
+
+<body>
+    <div id="loginBox">
+        <div>
+            <img src="../assets/images/logo.png" style="display:inline-block"/>
+        </div>
+        <div class="userPwdBox" style="background:url('../assets/images/login.png') no-repeat;">
+                <input type="text" placeholder="输入帐号" maxlength="100" id="username"  value="" AutoComplete="off"   />
+                <input type="password"  maxlength="100" id="password"  value="" autocomplete="off" />
+        </div>
+        <p id="errormsg" style="color:#f00;height:28px;line-height:28px"></p>
+        <button type="button" tabindex="4"  id="loginBtn" class="btn-login " >登陆</button>
+        <div style="padding: 10px 0 0 0; text-align: right">
+            <span class=" version">版本号:2.2.88</span>
+            <a href="javascript:;" class=" cn" title="中文版"></a>&nbsp;
+            <a style="display: none" href="javascript:;" class="dLine en" title="English Version"></a>
+        </div>
+    </div>
+    <!-- 添加当前模板js -->
+    <link rel="import" href="base/_footer_js.html?__inline">
+    <script src="../assets/js/pages/login.js"></script>
+</body>
+
+</html>

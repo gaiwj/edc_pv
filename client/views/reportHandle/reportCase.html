@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link rel="import" href="../base/_header_css.html?__inline">
+    <style>
+        #formSearch .col-md-3,#formSearch .col-md-4,#formSearch .col-md-8{
+            padding:0;
+            height:28px;
+        }
+    </style>
+</head>
+<body>
+<link rel="import" href="../base/header.html?__inline">
+
+<div class="content">
+    <div class="position">当前位置：
+        <span >报告管理</span>
+        <span style="padding: 0 5px;">&gt;</span>
+        <span>个例报告</span>
+    </div>
+    <div style="position: relative;padding-top:50px">
+        <div class="searchBox" style="position: absolute;top:0;z-index:100;width:100%">
+            <div class="panel panel-default searchPanel" style="margin-bottom: 0;display:none">
+                <div class="panel-heading" >
+                    <h4 class="panel-title">
+                        <a >搜索条件</a>
+                    </h4>
+                </div>
+                <div id="" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        <form id="formSearch" class="clearfix">
+                            <div class="col-md-3 form-group">
+                                <label class="col-md-4">报告编号:</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="safetyreportid" name="safetyreportid">
+                                </div>
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label class="col-md-4">报告类型:</label>
+                                <div class="col-md-8">
+                                    <select class="select2 " id="reportType" name="reportType" >
+                                        <option value="">请选择</option>
+                                        <option value="9ada081f-c296-42a3-8db3-af69db03310e" >新的</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label class="col-md-4">严重性:</label>
+                                <div class="col-md-8">
+                                    <select class="select2 " id="ponderanceId" name="ponderanceId" >
+                                        <option value="">请选择</option>
+                                        <option value="9bc127ed-822d-4527-b80f-f7e69fe7f0da" >严重</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label class="col-md-4">首次/随访报告:</label>
+                                <div class="col-md-8">
+                                    <select class="select2 " id="initialOrFollowup" name="initialOrFollowup" >
+                                        <option value="">请选择</option>
+                                        <option value="ec63fd9c-b715-4571-96b8-ea43e562cb23" >首次报告</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label class="col-md-4">收到报告日期:</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control timePicker " id="reportReceiveDateBegin" name="reportReceiveDateBegin" style="width:48%;display:inline-block">-
+                                    <input type="text" class="form-control timePicker " id="reportReceiveDateEnd" name="reportReceiveDateEnd" style="width:48%;display:inline-block">
+                                </div>
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label class="col-md-4">PV部门获知日期:</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control timePicker " id="reportDrugsafetyDateBegin" name="reportDrugsafetyDateBegin" style="width:48%;display:inline-block">-
+                                    <input type="text" class="form-control timePicker " id="reportDrugsafetyDateEnd" name="reportDrugsafetyDateEnd" style="width:48%;display:inline-block">
+                                </div>
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label class="col-md-4">商品名称:</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="brandName" name="brandName">
+                                </div>
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label class="col-md-4">通用名称:</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="genericName" name="genericName">
+                                </div>
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label class="col-md-4">因果关系:</label>
+                                <div class="col-md-8">
+                                    <select class="select2 " id="causalityId" name="causalityId" >
+                                        <option value="">请选择</option>
+                                        <option value="96425825-49fd-4454-9587-8bc194f65f51" >相关</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label class="col-md-4">不良事件名称:</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="adverseEvent" name="adverseEvent">
+                                </div>
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label class="col-md-4">不良事件编码值:</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="adverseEventCode" name="adverseEventCode">
+                                </div>
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label class="col-md-4">不良事件发生日期:</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control timePicker " id="adverseEventBeginDate" name="adverseEventBeginDate" style="width:48%;display:inline-block">-
+                                    <input type="text" class="form-control timePicker " id="adverseEventEndDate" name="adverseEventEndDate" style="width:48%;display:inline-block">
+                                </div>
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label class="col-md-4">不良事件结局:</label>
+                                <div class="col-md-8">
+                                    <select class="select2 " id="adverseEventResult" name="adverseEventResult" >
+                                        <option value="">请选择</option>
+                                        <option value="69270192-656e-4135-a32f-4aee5496462a" >不详</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label class="col-md-4">患者姓名:</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="patientName" name="patientName">
+                                </div>
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label class="col-md-4">患者性别:</label>
+                                <div class="col-md-8">
+                                    <select class="select2 " id="patientGender" name="patientGender" >
+                                        <option value="">请选择</option>
+                                        <option value="c51dbff1-dbee-4209-ac41-703c4526317e" >男</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label class="col-md-4">出生日期:</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control timePicker" id="patientBirthday" name="patientBirthday">
+                                </div>
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label class="col-md-4">年龄:</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control " id="patientAge" name="patientAge">
+                                </div>
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label class="col-md-4">报告者姓名:</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control " id="reporterName" name="reporterName">
+                                </div>
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label class="col-md-4">相关编号:</label>
+                                <div class="col-md-8">
+                                    <select class="select2 " id="relateNumName" name="relateNumName" >
+                                        <option value="">请选择</option>
+                                        <option value="BeforeSystemCode" >前系统编号</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label class="col-md-4">编号值:</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control " readonly  id="relateNumValue" name="relateNumValue" placeholder="请先选择相关编号">
+                                </div>
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label class="col-md-4">报告状态:</label>
+                                <div class="col-md-8">
+                                    <select class="select2 " id="reportStatus" name="reportStatus" >
+                                        <option value="">请选择</option>
+                                        <option value="0" >数据录入中</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label class="col-md-4">项目编号:</label>
+                                <div class="col-md-8">
+                                    <select class="select2 " id="itemNumber" name="itemNumber" >
+                                        <option value="">请选择</option>
+                                        <option value="T-2563" >T-2563</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label class="col-md-4">企业报告类型:</label>
+                                <div class="col-md-8">
+                                    <select class="select2 " id="entInfo" name="entInfo" >
+                                        <option value="">请选择</option>
+                                        <option value="患者支持项目" >患者支持项目</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label class="col-md-4">已删除的报告:</label>
+                                <div class="col-md-8">
+                                    <input type="checkbox" name="isdelete" id="isdelete" value="true">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div style="text-align:center;margin-bottom:10px">
+                    <button type="button" class="btn btn-sm btn-primary searchReport">查询</button>
+                    <button type="button" class="btn btn-sm btn-primary resetSearchReport">重置</button>
+                    <button type="button" class="btn btn-sm btn-primary exportLineListing">导出LineListing</button>
+                </div>
+            </div>
+            <div class="panel panel-default panelTip" style="margin-bottom:0;cursor:pointer">
+                <div class="panel-body" style="text-align:center">
+                    <h5 class="down">下拉进行搜索
+                        <i class="fa fa-angle-double-down" aria-hidden="true"></i></h5>
+                    <h5 class="up" style="display:none">点击隐藏搜索
+                        <i class="fa fa-angle-double-up" aria-hidden="true"></i></h5>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default ">
+            <div class="panel-heading" >
+                <h4 class="panel-title">
+                    <a  >个例报告列表</a>
+                    <label> <input type="checkbox" checked name="ishideImportReport" id="ishideImportReport">隐藏导入报告</label>
+                </h4>
+            </div>
+            <table id="reportList"></table>
+        </div>
+    </div>
+</div>
+<!--创建新版本弹窗-->
+<div class="modal fade " id="creatNewVersionDialog" tabindex="1" data-backdrop="static" role="dialog" >
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content" >
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title" id="">创建新版本</h4>
+            </div>
+            <div class="popCon" style="overflow:visible">
+                <form id="formCreatNewVersion" class="clearfix" style="padding:10px 0">
+                    <div class="col-md-12 form-group has-require">
+                        <label class="col-md-6">收到报告日期 :</label>
+                        <div class="col-md-6">
+                            <input id="reportReceiveDate" type="text" class="form-control timePicker" name="reportReceiveDate" value=""  data-bv-notempty data-bv-notempty-message="必填项">
+                        </div>
+                    </div>
+                    <div class="col-md-12 form-group has-require">
+                        <label class="col-md-6">PV部门获知日期 :</label>
+                        <div class="col-md-6">
+                            <input id="reportDrugsafetyDate" type="text" class="form-control timePicker" name="reportDrugsafetyDate" value=""  data-bv-notempty data-bv-notempty-message="必填项">
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 form-group has-require">
+                        <label class="col-md-6">创建新版本的原因:</label>
+                        <div class="col-md-6">
+                            <select class="select2 " id="reason" name="reason timePicker" data-bv-notempty data-bv-notempty-message="必填项">
+                                <option value="">请选择</option>
+                                <option value="22fe8dd3-4042-479e-a5b1-a7f584d016d3" >修正</option>
+                                <option value="22fe8dd3-4042-479e-a5b1-a7f584d016d3" >修正</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-sm saveNewVersion">确 定</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 添加当前模板js -->
+<link rel="import"  href="../base/footer.html?__inline">
+<link rel="import" href="../base/_footer_js.html?__inline">
+<script src="../assets/js/pages/reportHandle/reportCase.js"></script>
+</body>
+</html>

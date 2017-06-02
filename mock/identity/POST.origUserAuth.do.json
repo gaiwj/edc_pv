@@ -1,0 +1,271 @@
+{
+	"accessToken": "wUvGsNKUNxO942KkYeg1Yn3rvDwRwB3QUjBnRrsQnBsMPXh9bl_j5x-Wf0KXOybzoem58F3VQgPehLZ08B6LNU3KsWdcDXb7LjSwE_9T-w_eB4jyx3FB8ogu8i3Xjv7QAmf-KZLZGCpVasPACamZwpROWhr8a9bTEPgvbTkBwmZcjr0g1ejKEVseyPU2mrD8XQ9qo-x3jrb4RZWnMVxQirV6PBAg3pFkr6EaM1QYVUXEkKZkstYpgEHBMdbNwTl8oKHefIjO6d1kRF9t3xgLErpCH7KCIOMjpnWCcvcnbsgOI7wIPZQQ6EDuGG1j-Qq5UwDxCKRhlxyROwfbd3aiDK4rnduwbiSdH5ig9EY_mvnkVj-YLgujNyOgYHVpxzOrhVEkDGDM3foxx3Tp8Fr3DsYaMu9io48HwGaP-7TPGhE",
+	"tokenType": "bearer",
+	"refreshToken": "1vKzNuzLWHBiHZQewy04dh96Uq5TuUNFMuqeohg2NEL_0kkApgtPJsNkXlSrppVgBauUEa4LVpIHpiB3DqQC_iYF9en2KmJNOy_gzGOcNRi2VLa61XgsihKM--mvYal5MdxDbUOOsA4mRvvxs6ZrR9qa2laGr68bomVnKOv3pwj3eyxjsvjGDkFJ1WiBmOfxw39wz4OeKWaUtjgz0egVxkEmDshNnmaXthPdCEUIYCixMu8vBUFqwTfgi5a0is1MlUgyvWC1BTulRy7WldudXwCH_z8kABEcMOu2c68tCi1E1KOHyDquDm_MMTG5tgk5sXRocpieHsUO2SzpGgMOsY_j7CHshze6E4i2aaEiexsROy20B5qduHJe-8Oc1TelO0gFGqq465kgjG6COcdom-SJxVZPacWkJ2uMm5L9F0PP7UlMtuDcQwFJLb1plUluMHgMjuEhjnKOO6a7x5RCZcAyhyhsSTgSI59vAO-yz3c",
+	"success": true,
+	"authorityRoleRightList": [
+		{
+			"id": 1,
+			"roleId": 2,
+			"rightId": 1
+		},
+		{
+			"id": 2,
+			"roleId": 2,
+			"rightId": 2
+		},
+		{
+			"id": 3,
+			"roleId": 2,
+			"rightId": 6
+		},
+		{
+			"id": 4,
+			"roleId": 2,
+			"rightId": 21
+		}
+	],
+	"authorityRoleUserList": [
+		{
+			"id": 2,
+			"roleId": 1,
+			"userId": "2"
+		},
+		{
+			"id": 6,
+			"roleId": 2,
+			"userId": "2"
+		},
+		{
+			"id": 16,
+			"roleId": 3,
+			"userId": "2"
+		}
+	],
+	"authorityRightList": [
+		{
+			"id": 1,
+			"tenantId": "e4080308-df01-4246-bac9-90f2c44a4819",
+			"rightPid": "0",
+			"rightNid": "1",
+			"rightName": "工时计划",
+			"dataType": "module"
+		},
+		{
+			"id": 2,
+			"tenantId": "e4080308-df01-4246-bac9-90f2c44a4819",
+			"rightPid": "1",
+			"rightNid": "2",
+			"rightName": "只查看",
+			"dataType": "right"
+		},
+		{
+			"id": 3,
+			"tenantId": "e4080308-df01-4246-bac9-90f2c44a4819",
+			"rightPid": "1",
+			"rightNid": "3",
+			"rightName": "更新版本",
+			"dataType": "right"
+		},
+		{
+			"id": 4,
+			"tenantId": "e4080308-df01-4246-bac9-90f2c44a4819",
+			"rightPid": "1",
+			"rightNid": "4",
+			"rightName": "只编辑任务",
+			"dataType": "right"
+		},
+		{
+			"id": 5,
+			"tenantId": "e4080308-df01-4246-bac9-90f2c44a4819",
+			"rightPid": "1",
+			"rightNid": "5",
+			"rightName": "提交",
+			"dataType": "right"
+		},
+		{
+			"id": 6,
+			"tenantId": "e4080308-df01-4246-bac9-90f2c44a4819",
+			"rightPid": "1",
+			"rightNid": "6",
+			"rightName": "导出",
+			"dataType": "right"
+		},
+		{
+			"id": 7,
+			"tenantId": "e4080308-df01-4246-bac9-90f2c44a4819",
+			"rightPid": "0",
+			"rightNid": "7",
+			"rightName": "工时填报",
+			"dataType": "module"
+		},
+		{
+			"id": 8,
+			"tenantId": "e4080308-df01-4246-bac9-90f2c44a4819",
+			"rightPid": "7",
+			"rightNid": "8",
+			"rightName": "只查看",
+			"dataType": "right"
+		},
+		{
+			"id": 9,
+			"tenantId": "e4080308-df01-4246-bac9-90f2c44a4819",
+			"rightPid": "7",
+			"rightNid": "9",
+			"rightName": "编辑",
+			"dataType": "right"
+		},
+		{
+			"id": 10,
+			"tenantId": "e4080308-df01-4246-bac9-90f2c44a4819",
+			"rightPid": "7",
+			"rightNid": "10",
+			"rightName": "提交",
+			"dataType": "right"
+		},
+		{
+			"id": 11,
+			"tenantId": "e4080308-df01-4246-bac9-90f2c44a4819",
+			"rightPid": "0",
+			"rightNid": "11",
+			"rightName": "工时统计",
+			"dataType": "module"
+		},
+		{
+			"id": 12,
+			"tenantId": "e4080308-df01-4246-bac9-90f2c44a4819",
+			"rightPid": "11",
+			"rightNid": "12",
+			"rightName": "只查看",
+			"dataType": "right"
+		},
+		{
+			"id": 13,
+			"tenantId": "e4080308-df01-4246-bac9-90f2c44a4819",
+			"rightPid": "11",
+			"rightNid": "13",
+			"rightName": "导出",
+			"dataType": "right"
+		},
+		{
+			"id": 14,
+			"tenantId": "e4080308-df01-4246-bac9-90f2c44a4819",
+			"rightPid": "0",
+			"rightNid": "14",
+			"rightName": "基础设置",
+			"dataType": "module"
+		},
+		{
+			"id": 15,
+			"tenantId": "e4080308-df01-4246-bac9-90f2c44a4819",
+			"rightPid": "14",
+			"rightNid": "15",
+			"rightName": "规则设置",
+			"dataType": "module"
+		},
+		{
+			"id": 16,
+			"tenantId": "e4080308-df01-4246-bac9-90f2c44a4819",
+			"rightPid": "15",
+			"rightNid": "16",
+			"rightName": "只查看",
+			"dataType": "right"
+		},
+		{
+			"id": 17,
+			"tenantId": "e4080308-df01-4246-bac9-90f2c44a4819",
+			"rightPid": "15",
+			"rightNid": "17",
+			"rightName": "编辑",
+			"dataType": "right"
+		},
+		{
+			"id": 18,
+			"tenantId": "e4080308-df01-4246-bac9-90f2c44a4819",
+			"rightPid": "15",
+			"rightNid": "18",
+			"rightName": "导出",
+			"dataType": "right"
+		},
+		{
+			"id": 19,
+			"tenantId": "e4080308-df01-4246-bac9-90f2c44a4819",
+			"rightPid": "14",
+			"rightNid": "19",
+			"rightName": "任务配置",
+			"dataType": "module"
+		},
+		{
+			"id": 20,
+			"tenantId": "e4080308-df01-4246-bac9-90f2c44a4819",
+			"rightPid": "19",
+			"rightNid": "20",
+			"rightName": "只查看",
+			"dataType": "right"
+		},
+		{
+			"id": 21,
+			"tenantId": "e4080308-df01-4246-bac9-90f2c44a4819",
+			"rightPid": "19",
+			"rightNid": "21",
+			"rightName": "编辑",
+			"dataType": "right"
+		},
+		{
+			"id": 22,
+			"tenantId": "e4080308-df01-4246-bac9-90f2c44a4819",
+			"rightPid": "14",
+			"rightNid": "22",
+			"rightName": "词典管理",
+			"dataType": "module"
+		},
+		{
+			"id": 23,
+			"tenantId": "e4080308-df01-4246-bac9-90f2c44a4819",
+			"rightPid": "22",
+			"rightNid": "23",
+			"rightName": "只查看",
+			"dataType": "right"
+		},
+		{
+			"id": 24,
+			"tenantId": "e4080308-df01-4246-bac9-90f2c44a4819",
+			"rightPid": "22",
+			"rightNid": "24",
+			"rightName": "编辑",
+			"dataType": "right"
+		},
+		{
+			"id": 25,
+			"tenantId": "e4080308-df01-4246-bac9-90f2c44a4819",
+			"rightPid": "14",
+			"rightNid": "25",
+			"rightName": "权限设置",
+			"dataType": "module"
+		},
+		{
+			"id": 26,
+			"tenantId": "e4080308-df01-4246-bac9-90f2c44a4819",
+			"rightPid": "25",
+			"rightNid": "26",
+			"rightName": "只查看",
+			"dataType": "right"
+		},
+		{
+			"id": 27,
+			"tenantId": "e4080308-df01-4246-bac9-90f2c44a4819",
+			"rightPid": "25",
+			"rightNid": "27",
+			"rightName": "编辑角色",
+			"dataType": "right"
+		},
+		{
+			"id": 28,
+			"tenantId": "e4080308-df01-4246-bac9-90f2c44a4819",
+			"rightPid": "25",
+			"rightNid": "28",
+			"rightName": "编辑权限",
+			"dataType": "right"
+		}
+	]
+}

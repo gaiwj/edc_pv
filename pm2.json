@@ -1,0 +1,24 @@
+{
+  "name"        : "tm_edc",  // 应用名称
+  "script"      : "./server/bin/www",  // 实际启动脚本
+  "cwd"         : "./",  // 当前工作路径
+  "watch": ["views", "routes"],
+  "ignore_watch" : ["node_modules", "public"],
+  "watch_options": {
+    "followSymlinks": false
+  },
+  "error_file" : "./logs/app-err.log",  // 错误日志路径
+  "out_file"   : "./logs/app-out.log",  // 普通日志路径
+  "env": {
+    "NODE_ENV": "production",  // 环境参数，当前指定为生产环境
+    "ADDRESS":"http://ecollect-4.0-service2.mobilemd.cn:91/api/",
+    "PORT":"80"
+  },
+  "env_pre": {
+    "PORT": "8091"
+  },
+  "env_test": {
+    "PORT": "8081"
+  }
+}
+

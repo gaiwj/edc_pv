@@ -1,0 +1,110 @@
+<script src="../../assets/libs/jquery/jquery-2.2.4.js"></script>
+<script src="../../assets/libs/bootstrap/js/bootstrap.js"></script>
+<script src="../../assets/libs/bootstrap-datepicker/js/bootstrap-datetimepicker.js"></script>
+<script src="../../assets/libs/bootstrap-table/bootstrap-table.js"></script>
+<script src="../../assets/libs/bootstrap-table/bootstrap-table-zh-CN.js"></script>
+<script src="../../assets/libs/fixed-columns/bootstrap-table-fixed-columns.js"></script>
+<script src="../../assets/libs/bootstrap-editable/js/bootstrap-editable.js"></script>
+<script src="../../assets/libs/icheck/icheck.js"></script>
+<script src="../../assets/libs/jquery/jquery.serializejson.js"></script>
+<script src="../../assets/libs/select2/js/select2.js"></script>
+<script src="../../assets/libs/tree-column/bootstrap-table-tree-column.js"></script>
+<script src="../../assets/libs/bootstrap-validator/bootstrapValidator.js"></script>
+<script src="../../assets/libs/jquery-ui/jquery-ui.min.js"></script>
+<script src="../../assets/js/build/template.js"></script>
+<script src="../../assets/js/tms.js"></script>
+<script src="../../assets/js/modules/tmDate.js"></script>
+<script>
+
+    $(function () {
+        // 初始化select2
+        $('.select2').select2({
+            minimumResultsForSearch: -1,
+            width: "100%",
+        });
+        /*初始化icheck*/
+        $('input').iCheck({
+            labelHover : false,
+            cursor : true,
+            checkboxClass : 'icheckbox_minimal',
+            radioClass : 'iradio_minimal',
+            increaseArea : '20%'
+        });
+
+        $('#wrapper').css('height',function(){
+            return $(window).height() - 52;
+        });
+        $(window).resize(function () {
+            $('#wrapper').css('height',function(){
+                return $(window).height() - 52;
+            });
+        });
+
+        // 表格自适应
+        tableResize();
+
+    });
+
+    // 表格自适应
+    function tableResize(){
+        $('.table').bootstrapTable('resetWidth');
+        $(window).resize(function () {
+            $('.table').bootstrapTable('resetWidth');
+        });
+    }
+
+
+
+    // 退出系统
+    function onLogout() {
+        tms.confirm('确定要退出吗？',function(){
+            window.location.href = "../login";
+        });
+    }
+    /*关闭弹窗*/
+    function closeModal(){
+        $('.modal').modal('hide')
+    }
+    /**弹窗**/
+    $('.modal').on('shown.bs.modal',function(){
+        $(this).find('.popCon').scrollTop(0)
+    })
+    /****拖动*****/
+    $(".modal-content").draggable({handle: '.modal-header', containment: [0, 0, window.innerWidth-20, window.innerHeight-20] });
+    $(document).on("show.bs.modal", ".modal", function(){
+        $(this).draggable({
+            handle: ".modal-header" ,  // 只能点击头部拖动
+        });
+        $(this).css("overflow", "hidden"); // 防止出现滚动条，出现的话，你会把滚动条一起拖着走的
+    });
+    /****格式化时间为YYYY-MM-DD****/
+    function getNormalDate(val){
+        if(val==""||val==null||val=='undefined'){
+            return ""
+        }else{
+            return moment(val).format('YYYY-MM-DD')
+        }
+    }
+    /*****获取表单内容value****/
+    function getFormObjDate(id){
+        var data={};
+        var $formdata=$('#'+id).serializeArray();
+        $.each($formdata,function(i,n){
+            data[n.name]=n.value
+        })
+        return data;
+    }
+
+    /*****菜单****/
+    $(document).on('click','.firstMenu',function(){
+        var  _self=$(this);
+        $('.secondMenu:visible').not(_self.next()).slideUp();
+        if(_self.next().is('.secondMenu')){
+            _self.next().slideToggle('100')
+            return false;
+        }
+    })
+    $(document).on('click','body',function(){
+        $('.secondMenu:visible').slideUp();
+    })
+</script>

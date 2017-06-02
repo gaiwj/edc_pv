@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link rel="import" href="../base/_header_css.html?__inline">
+    <style>
+        h5{
+            font-size: 14px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-top: 20px;
+            color: #2597DD;
+        }
+    </style>
+</head>
+<body>
+<link rel="import" href="../base/header.html?__inline">
+
+<div class="content">
+    <div class="position">当前位置：
+        <span >信息维护</span>
+        <span style="padding: 0 5px;">&gt;</span>
+        <span >企业信息</span>
+    </div>
+    <div >
+        <h4>企业信息</h4>
+        <button type="button" class="btn btn-sm btn-primary">保存</button>
+        <form id="enterForm">
+            <h5><span>企业信息</span></h5>
+            <div class="col-md-4 form-group">
+                <label class="col-md-6">企业报告类型 :</label>
+                <div class="col-md-6">
+                    <input id="companytype" type="text" class="form-control " readonly name="companytype" value=""  >
+                </div>
+            </div>
+            <div class="col-md-4 form-group">
+                <label class="col-md-6">企业名称 :</label>
+                <div class="col-md-6">
+                    <input id="name" type="text" class="form-control " readonly name="name" value=""  >
+                </div>
+            </div>
+            <div class="col-md-4 form-group">
+                <label class="col-md-6">企业名称缩写（英文） :</label>
+                <div class="col-md-6">
+                    <input id="itemnumber" type="text" class="form-control " readonly name="itemnumber" value=""  >
+                </div>
+            </div>
+            <div class="col-md-4 form-group">
+                <label class="col-md-6">企业地址 :</label>
+                <div class="col-md-6">
+                    <input id="itemnumber" type="text" class="form-control " readonly name="itemnumber" value=""  >
+                </div>
+            </div>
+            <div class="col-md-4 form-group">
+                <label class="col-md-6">国家 :</label>
+                <div class="col-md-6">
+                    <input id="itemnumber" type="text" class="form-control " readonly name="itemnumber" value=""  >
+                </div>
+            </div>
+            <div class="col-md-4 form-group">
+                <label class="col-md-6">省/市 :</label>
+                <div class="col-md-6">
+                    <input id="itemnumber" type="text" class="form-control " readonly name="itemnumber" value=""  >
+                </div>
+            </div>
+            <div class="col-md-4 form-group">
+                <label class="col-md-6">城市 :</label>
+                <div class="col-md-6">
+                    <input id="itemnumber" type="text" class="form-control " readonly name="itemnumber" value=""  >
+                </div>
+            </div>
+            <div class="col-md-4 form-group">
+                <label class="col-md-6">邮编 :</label>
+                <div class="col-md-6">
+                    <input id="itemnumber" type="text" class="form-control " readonly name="itemnumber" value=""  >
+                </div>
+            </div>
+        </form>
+
+
+    </div>
+</div>
+<!--新增编辑单位信息弹窗-->
+<div class="modal fade " id="modalManual" tabindex="1" data-backdrop="static" role="dialog" >
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" style="width:930px">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title" id="">报告单位信息</h4>
+            </div>
+            <div class="popCon">
+                <form id="form" class="clearfix">
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success btn-sm saveNewReportUnit">确 定</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 添加当前模板js -->
+<link rel="import" href="../base/footer.html?__inline">
+<link rel="import" href="../base/_footer_js.html?__inline">
+<script src="../assets/js/pages/information/enterpriseInfor.js"></script>
+</body>
+</html>

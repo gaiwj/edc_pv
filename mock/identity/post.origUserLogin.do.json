@@ -1,0 +1,43 @@
+{
+	"accessToken": "wUvGsNKUNxO942KkYeg1Yn3rvDwRwB3QUjBnRrsQnBsMPXh9bl_j5x-Wf0KXOybzoem58F3VQgPehLZ08B6LNU3KsWdcDXb7LjSwE_9T-w_eB4jyx3FB8ogu8i3Xjv7QAmf-KZLZGCpVasPACamZwpROWhr8a9bTEPgvbTkBwmZcjr0g1ejKEVseyPU2mrD8XQ9qo-x3jrb4RZWnMVxQirV6PBAg3pFkr6EaM1QYVUXEkKZkstYpgEHBMdbNwTl8oKHefIjO6d1kRF9t3xgLErpCH7KCIOMjpnWCcvcnbsgOI7wIPZQQ6EDuGG1j-Qq5UwDxCKRhlxyROwfbd3aiDK4rnduwbiSdH5ig9EY_mvnkVj-YLgujNyOgYHVpxzOrhVEkDGDM3foxx3Tp8Fr3DsYaMu9io48HwGaP-7TPGhE",
+	"tokenType": "bearer",
+	"expiresIn": "57599",
+	"origProjectList": [{
+			"softwareAlias": "工时系统测试项目",
+			"softwareId": "fef30f97f0004944b3a4a72700768386",
+			"companyId": "72012ed3-0a4f-45f8-ac16-f051a207895b",
+			"companyName": "嘉兴太美医疗科技有限公司2",
+			"companyNum": "0111",
+			"databaseString": "Data Source=.;Initial Catalog=.;User ID=.;Password=.",
+			"locked": false,
+			"userId": "ee59d1342fe34140bd71a7270075e6a2",
+			"tel": "18964995490",
+			"nameOfUser": "chenyin",
+			"databaseName": ".",
+			"companyAbbr": "11",
+			"functionVersion": "",
+			"enabled": true,
+			"hospitals": []
+		}, {
+			"softwareAlias": "测试2",
+			"softwareId": "fef30f97f0004944b3a4a72700768386",
+			"companyId": "72012ed3-0a4f-45f8-ac16-f051a207895b",
+			"companyName": "嘉兴太美医疗科技有限公司2",
+			"projectId": "c3ee35f925994ac98e9fa7270082155e",
+			"projectNum": "1112x",
+			"companyNum": "0111",
+			"projectName": "2",
+			"databaseString": "Data Source=.;Initial Catalog=.;User ID=.;Password=.",
+			"locked": false,
+			"userId": "ee59d1342fe34140bd71a7270075e6a2",
+			"tel": "18964995490",
+			"nameOfUser": "chenyin",
+			"databaseName": ".",
+			"companyAbbr": "11",
+			"functionVersion": "",
+			"enabled": true,
+			"planNum": "1",
+			"hospitals": []
+		}
+	]
+}

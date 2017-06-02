@@ -1,0 +1,130 @@
+<div class="topBox">
+    <div id="div_title" class="topWrap clearfix">
+        <div class="logo">
+            <div class="klogo" style="float:left;height:55px;"><img alt="logo" src="" style="height:50px;"></div>
+            <img src="../../assets/images/logo.png" alt="logo">
+        </div>
+        <div class="topR">
+            <script>
+                document.write('<a data-toggle="modal" data-target="#changePsd" href="javascript:;" style="color:#E4E4E4;font-size:15px;" class="glyphicon glyphicon-user userIcon fSize" title="' + (getCookie('lang') == "zh-CN" ? "密码修改" : "Change Password") + '"></a>')
+            </script>
+            <a data-toggle="modal" data-target="#changePsd" href="javascript:;" style="color:#E4E4E4;font-size:15px;"
+               class="glyphicon glyphicon-user userIcon fSize" title="密码修改"></a>
+            <span id="UserName" class="Name" style="color:#E4E4E4;font-size:15px;">刘晓硕</span>&nbsp;&nbsp;
+            <script>
+                document.write('<a href="javascript:;" style="color:#E4E4E4;font-size:15px;" class="loginout glyphicon glyphicon-off fSize" title="' + (getCookie('lang') == "zh-CN" ? "退出" : "Exit") + '"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/User/edc_pv.aspx?active=a1&language=' + (getCookie('lang') == "zh-CN" ? "zh-CN" : "en-US") + '" style="color:#E4E4E4;font-size:15px;" class="msgCount glyphicon glyphicon-envelope fSize" title="' + (getCookie('lang') == "zh-CN" ? "通知消息" : "notice Message") + '" ><span class="count"></span></a>')
+            </script>
+            <a href="javascript:;" style="color:#E4E4E4;font-size:15px;" class="loginout glyphicon glyphicon-off fSize"
+               title="退出"></a>
+        </div>
+        <ul class="navg clear">
+            <li id="a0">
+                <a href="/index" class="firstMenu">首页</a>
+            </li>
+            <li id="a1">
+                <a href="/reportHandle/reportCase"  class="firstMenu active">报告管理<span class="caret"></span></a>
+
+                <div class="secondMenu">
+                    <div>
+                        <a href="/reportHandle/reportCase">个例报告</a>
+                    </div>
+                    <div>
+                        <a href="/User/origanFile.aspx">原始资料</a>
+                    </div>
+                    <div>
+                        <a href="/User/docRetr.aspx?active=a1&amp;language=zh-CN" >文献检索</a>
+                    </div>
+                    <div>
+                        <a href="/User/edc_pv.aspx?active=a1&amp;language=zh-CN" >外部数据接入</a>
+                    </div>
+                    <div>
+                        <a href="/User/reportRegulators.aspx?active=a1&amp;language=zh-CN">上报监管部门</a>
+                    </div>
+                </div>
+            </li>
+            <li id="a2">
+                    <a href="/User/operat"  class="firstMenu">信息维护<span class="caret"></span></a>
+
+                    <div class="secondMenu">
+                        <div>
+                            <a href="/information/preProductInfo" >产品信息-上市前</a>
+                        </div>
+                        <div>
+                            <a href="/information/saleProductInfo" >产品信息-上市后</a>
+                        </div>
+                        <div>
+                            <a href="/information/enterpriseInfor" >企业信息</a>
+                        </div>
+                        <div>
+                            <a href="/information/research" >研究项目</a>
+                        </div>
+                    </div>
+            </li>
+            <li id="a3">
+                    <a href=""  class="firstMenu">质量管理<span class="caret"></span></a>
+                    <div class="secondMenu" >
+                        <div>
+                            <a href="/Snapshoot/Report.aspx?active=a3&amp;language=zh-CN" >稽查痕迹</a>
+                        </div>
+                        <div>
+                            <a href="/Query/QueryList.aspx?active=a3&amp;language=zh-CN" >质疑管理</a>
+                        </div>
+                    </div>
+            </li>
+            <li id="a4">
+                    <a href=""  class="firstMenu">行列表<span class="caret"></span></a>
+                    <div class="secondMenu" >
+                        <div>
+                            <a href="/User/ForeignLineListing.aspx?active=a4&amp;language=zh-CN" >境外行列表</a>
+                        </div>
+                        <div>
+                            <a href="/User/feedBack.aspx?active=a4&amp;language=zh-CN" >反馈数据批处理</a>
+                        </div>
+                        <div>
+                            <a href="/User/feedBackSingle.aspx?active=a4&amp;language=zh-CN" >反馈数据单处理</a>
+                        </div>
+                        <div>
+                            <a href="/User/ForeignDictionary.aspx?active=a4&amp;language=zh-CN" >字典维护</a>
+                        </div>
+                    </div>
+            </li>
+            <li id="a5">
+                    <a href=""  class="firstMenu">分析处理<span class="caret"></span></a>
+                    <div class="secondMenu">
+                        <div><a href="null?active=a5&amp;language=zh-CN" >高级检索</a></div>
+                        <div><a href="/User/docStatistics.aspx?active=a5&amp;language=zh-CN" >文献统计</a></div>
+                        <div><a href="/User/Statistical.aspx?active=a5&amp;language=zh-CN" >统计分析</a></div>
+                    </div>
+            </li>
+            <li id="a6">
+                    <a href=""  class="firstMenu">PSUR管理<span class="caret"></span></a>
+                    <div class="secondMenu" >
+                        <div><a href="" >PSUR计划</a></div>
+                    </div>
+            </li>
+            <li id="a7">
+                    <a href="null?active=a7&amp;language=zh-CN"  class="firstMenu">帮助<span class="caret"></span></a>
+                    <div class="secondMenu" >
+                        <div><a href="/User/announcement.aspx?active=a7&amp;language=zh-CN" >公告</a></div>
+                        <div><a href="\TemplateFile\eSafety2.1前台操作手册（未评审）.pdf?active=a7&amp;language=zh-CN"
+                                >用户手册</a></div>
+                </div>
+            </li>
+            <li id="a999">
+                    <a href="/User/RoleMangage.aspx?active=a999&amp;language=zh-CN" class="firstMenu">系统管理<span class="caret"></span></a>
+                    <div class="secondMenu" >
+                        <div><a href="/User/RoleMangage.aspx?active=a999&amp;language=zh-CN" >角色管理</a></div>
+                        <div><a href="/systermManage/systermConfig" >系统配置</a></div>
+                        <div><a href="/Rule/Rule.aspx?active=a999&amp;language=zh-CN" >规则明细</a></div>
+                        <div><a href="/systermManage/ruleConfig" >规则配置</a></div>
+                        <div><a href="/User/PSURConig.aspx?active=a999&amp;language=zh-CN" >PSUR配置</a></div>
+                        <div><a href="/User/LogoUpload.aspx?active=a999&amp;language=zh-CN" >LOGO上传</a>
+                        </div>
+                        <div><a href="/systermManage/reportSetting" >Reportsetting</a>
+                        </div>
+                    </div>
+            </li>
+        </ul>
+    </div>
+
+</div>

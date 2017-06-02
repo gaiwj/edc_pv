@@ -1,0 +1,49 @@
+{
+  "total": 1,
+  "data": [{
+    "id": 1,
+    "userId": "8bbae882bfcd4f07b2d6a71400383048",
+    "periodTimeId": 42,
+    "tenantId": "72012ed3-0a4f-45f8-ac16-f051a207895b",
+    "approvalStatus": 0,
+    "workHour": 37.00,
+    "submitDate": "2017-05-21",
+    "submitDelay": true,
+    "fromDate": "2017-03-21",
+    "toDate": "2017-04-05"
+  },{
+    "id": 1,
+    "userId": "8bbae882bfcd4f07b2d6a71400383048",
+    "periodTimeId": 42,
+    "tenantId": "72012ed3-0a4f-45f8-ac16-f051a207895b",
+    "approvalStatus":1,
+    "workHour": 27.00,
+    "submitDate": "2017-01-03",
+    "submitDelay": true,
+    "fromDate": "2017-01-01",
+    "toDate": "2019-01-03"
+  },{
+    "id": 1,
+    "userId": "8bbae882bfcd4f07b2d6a71400383048",
+    "periodTimeId": 42,
+    "tenantId": "72012ed3-0a4f-45f8-ac16-f051a207895b",
+    "approvalStatus":2,
+    "workHour": 17.00,
+    "submitDate": "2017-0103",
+    "submitDelay": true,
+    "fromDate": "2017-01-01",
+    "toDate": "2019-01-03"
+  },{
+    "id": 1,
+    "userId": "8bbae882bfcd4f07b2d6a71400383048",
+    "periodTimeId": 42,
+    "tenantId": "72012ed3-0a4f-45f8-ac16-f051a207895b",
+    "approvalStatus": 3,
+    "workHour": 3.00,
+    "submitDate": "2017-01-03",
+    "submitDelay": true,
+    "fromDate": "2017-01-01",
+    "toDate": "2019-01-03"
+  }
+  ]
+}

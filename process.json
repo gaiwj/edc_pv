@@ -1,0 +1,17 @@
+{
+  "apps": [{
+    "name": "tm_edc",
+    "script": "server/bin/www",
+    //"node_args": "–harmony",
+      "watch": ["views", "routes"],
+      "ignore_watch" : ["node_modules", "public"],
+      "watch_options": {
+        //"usePolling":true
+        "followSymlinks": false,
+       /* "persistent"    : true,
+        "ignoreInitial" : true*/
+      },
+    "exec_mode": "fork",//fork,cluster
+    "log_date_format": "YYYY - MM - DD HH: mm Z"
+  }]
+}

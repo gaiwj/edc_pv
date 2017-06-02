@@ -1,0 +1,50 @@
+{
+  "name": "tm.node",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "mock": "mockable mock -p 91",
+    "clean": "rimraf ./server/public & rimraf ./server/views",
+    "tmod2": "cd client/views/templates && tmod --no-watch && cd ../../../",
+    "tmod": "cd client/views/templates && tmod",
+    "www": "npm run tmod2 && fis3 release debug -wcd ./server",
+    "pre": "npm run clean && npm run tmod2 && fis3 release pre -cd ./server",
+    "prd": "npm run clean && npm run tmod2 && fis3 release prd -cd ./server",
+    "server": "nodemon --debug server/bin/www"
+  },
+  "dependencies": {
+    "art-template": "^3.0.3",
+    "bluebird": "^3.5.0",
+    "body-parser": "~1.15.2",
+    "compression": "^1.6.2",
+    "connect-redis": "^3.2.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "^4.14.0",
+    "express-session": "^1.15.1",
+    "file-stream-rotator": "0.0.7",
+    "highcharts": "^5.0.9",
+    "jquery": "^2.2.4",
+    "morgan": "^1.7.0",
+    "pako": "^1.0.5",
+    "redis": "^2.7.0",
+    "request": "^2.79.0",
+    "request-promise": "^4.1.1",
+    "serve-favicon": "^2.3.2",
+    "unzip-response": "^2.0.1"
+  },
+  "devDependencies": {
+    "@types/ejs": "^2.3.33",
+    "fis-optimizer-html-minifier": "0.0.9",
+    "fis-parser-less-2.x": "^0.1.4",
+    "fis3-hook-amd": "^0.1.18",
+    "fis3-hook-commonjs": "^0.1.22",
+    "fis3-parser-less-2.x": "^0.1.4",
+    "fis3-postpackager-loader": "^1.5.2",
+    "fis3-postprocessor-autoprefixer": "^1.0.0",
+    "node-glob": "^1.2.0",
+    "nodemon": "^1.11.0",
+    "rimraf": "^2.6.1",
+    "tmodjs": "^1.0.4"
+  }
+}

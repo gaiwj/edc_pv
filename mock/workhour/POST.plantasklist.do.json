@@ -1,0 +1,75 @@
+{
+  "planTasks": [{
+    "id": 3,
+    "nid": "3",
+    "projectId": "c3ee35f925994ac98e9fa7270082155e",
+    "tenantId": "72012ed3-0a4f-45f8-ac16-f051a207895b",
+    "planVersionId": 2,
+    "planBriefId": 2,
+    "taskConfigCode": "T0001",
+    "taskConfigName": "标准合同准备",
+    "unit": "1次",
+    "functionTeamCode": 1,
+    "functionTeamName": "CRA",
+    "numberOfPeople": 4,
+    "workHour": 35.00
+  },{
+    "id": 4,
+    "pid":3,
+    "nid": "3",
+    "projectId": "c3ee35f925994ac98e9fa7270082155e",
+    "tenantId": "72012ed3-0a4f-45f8-ac16-f051a207895b",
+    "planVersionId": 2,
+    "planBriefId": 2,
+    "taskConfigCode": "T0002",
+    "taskConfigName": "标准合同准备",
+    "unit": "1次",
+    "functionTeamCode": 1,
+    "functionTeamName": "CRA",
+    "numberOfPeople": 4,
+    "workHour": 45.00
+  },{
+    "id": 5,
+    "pid":3,
+    "projectId": "c3ee35f925994ac98e9fa7270082155e",
+    "tenantId": "72012ed3-0a4f-45f8-ac16-f051a207895b",
+    "planVersionId": 2,
+    "planBriefId": 2,
+    "taskConfigCode": "T0004",
+    "taskConfigName": "标准合同准备",
+    "unit": "1次",
+    "functionTeamCode": 1,
+    "functionTeamName": "CRA",
+    "numberOfPeople": 4,
+    "workHour": 45.00
+  },{
+    "id": 6,
+    "pid":4,
+    "projectId": "c3ee35f925994ac98e9fa7270082155e",
+    "tenantId": "72012ed3-0a4f-45f8-ac16-f051a207895b",
+    "planVersionId": 2,
+    "planBriefId": 2,
+    "taskConfigCode": "T0005",
+    "taskConfigName": "标准合同准备",
+    "unit": "1次",
+    "functionTeamCode": 1,
+    "functionTeamName": "CRA",
+    "numberOfPeople": 4,
+    "workHour": 45.00
+  }
+  ,{
+      "id": 7,
+      "projectId": "c3ee35f925994ac98e9fa7270082155e",
+      "tenantId": "72012ed3-0a4f-45f8-ac16-f051a207895b",
+      "planVersionId": 2,
+      "planBriefId": 2,
+      "taskConfigCode": "T0005",
+      "taskConfigName": "标准合同准备",
+      "unit": "1次",
+      "functionTeamCode": 1,
+      "functionTeamName": "CRA",
+      "numberOfPeople": 4,
+      "workHour": 45.00
+    }
+  ]
+}

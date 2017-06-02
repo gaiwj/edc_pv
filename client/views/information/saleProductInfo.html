@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link rel="import" href="../base/_header_css.html?__inline">
+    <!--<link rel="stylesheet" type="text/css" href="../assets/css/pages/.less" />-->
+</head>
+<body>
+<link rel="import" href="../base/header.html?__inline">
+
+<div class="content">
+    <div class="position">当前位置：
+        <span >信息维护</span>
+        <span style="padding: 0 5px;">&gt;</span>
+        <span >产品信息（上市后）</span>
+    </div>
+    <div >
+        <div class="panel panel-default productPanel">
+            <div class="panel-heading" style="text-align: right;">
+                <button type="button" class="btn btn-primary btn-sm addNewProduct"  data-toggle="modal" data-target="#modalManual" >新增</button>
+                <button type="button" class="btn btn-info btn-sm "  >导入</button>
+                <button type="button" class="btn btn-success btn-sm " >模板</button>
+
+            </div>
+            <table id="productInfoList"></table>
+        </div>
+        <!--不良反应-->
+        <div class="panel panel-default AEpanel" style="display:none">
+            <div class="panel-heading" style="text-align: right;">
+                <button type="button" class="btn btn-primary btn-sm addAE"  data-toggle="modal" data-target="#AEmodal" >新增</button>
+                <button type="button" class="btn btn-success btn-sm returnProductList" >返回</button>
+
+            </div>
+            <table id="AEList"></table>
+        </div>
+    </div>
+</div>
+<!--新增编辑弹窗-->
+<div class="modal fade " id="modalManual" tabindex="1" data-backdrop="static" role="dialog" >
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" style="width:930px">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title" id="">产品说明</h4>
+            </div>
+            <div class="popCon">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion"href="#collapseOne">主明细</a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <form id="form" class="clearfix">
+                                <div class="col-md-4 form-group has-require">
+                                    <label class="col-md-6">批准文号 :</label>
+                                    <div class="col-md-6">
+                                        <input id="approvalNumber" type="text" class="form-control has-error" name="approvalnumber" value=""  data-bv-notempty data-bv-notempty-message="必填项">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <label class="col-md-6">商品名称(中文) :</label>
+                                    <div class="col-md-6">
+                                        <input id="productNamecn" type="text" class="form-control " name="productnamecn" value=""  >
+                                    </div>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <label class="col-md-6">商品名称(英文) :</label>
+                                    <div class="col-md-6">
+                                        <input id="productNameen" type="text" class="form-control " name="productnameeng" value=""  >
+                                    </div>
+                                </div>
+                                <div class="col-md-4 form-group has-require">
+                                    <label class="col-md-6">通用名称(中文) :</label>
+                                    <div class="col-md-6">
+                                        <input id="GenericName" type="text" class="form-control has-error" name="genericnamecn" value=""  data-bv-notempty data-bv-notempty-message="必填项">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <label class="col-md-6">通用名称(英文):</label>
+                                    <div class="col-md-6">
+                                        <input id="GenericNameEng" type="text" class="form-control has-error" name="genericnameeng" value=""  >
+                                    </div>
+                                </div>
+                                <div class="col-md-12 form-group has-require">
+                                    <label class="col-md-2">活性成份</label>
+                                    <div class="col-md-10">
+                                        <input id="ActiveIngredient" type="text" class="form-control has-error" name="activeingredient" value=""  data-bv-notempty data-bv-notempty-message="必填项">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 form-group has-require">
+                                    <label class="col-md-6">药品分类:</label>
+                                    <div class="col-md-6">
+                                        <select class="select2 " id="psurdrugtype" name="psurdrugtype" data-bv-notempty data-bv-notempty-message="必填项">
+                                            <option value="">请选择</option>
+                                            <option value="6fe2dd80-74bf-47fd-a08f-cf07b5832b5c" selected>化学药</option>
+                                            <option value="6fe2dd80-74bf-47fd-a08f-cf07b5832b5c">化学药</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <label class="col-md-6">生产厂家名称:</label>
+                                    <div class="col-md-6">
+                                        <input id="manufacturer" type="text" class="form-control " name="manufacturer" value=""  >
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 form-group has-require">
+                                    <label class="col-md-6">剂型:</label>
+                                    <div class="col-md-6">
+                                        <select class="select2 " id="DosageForm" name="dosageform" data-bv-notempty data-bv-notempty-message="必填项">
+                                            <option value="">请选择</option>
+                                            <option value="4e0a4ab3-409f-430b-b0b5-3144536fd35e">片剂</option>
+                                            <option value="4e0a4ab3-409f-430b-b0b5-3144536fd35e">片剂</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 form-group has-require">
+                                    <label class="col-md-6">国产/进口:</label>
+                                    <div class="col-md-6">
+                                        <select class="select2 " id="domesticorimported" name="domesticorimported" data-bv-notempty data-bv-notempty-message="必填项">
+                                            <option value="">请选择</option>
+                                            <option value="国产">国产</option>
+                                            <option value="进口">进口</option>
+                                            <option value="国产/进口">国产/进口</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 form-group has-require">
+                                    <label class="col-md-3">规格:</label>
+                                    <div class="col-md-9">
+                                        <input id="spec" type="text" class="form-control col-md-12" name="spec" value=""  data-bv-notempty data-bv-notempty-message="必填项">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 form-group has-require">
+                                    <label class="col-md-2">用法用量:</label>
+                                    <div class="col-md-10">
+                                        <textarea id="usage" style="height:80px" type="text" class="form-control col-md-12" name="dosage" value=""  data-bv-notempty data-bv-notempty-message="必填项"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 form-group has-require">
+                                    <label class="col-md-2">适应症:</label>
+                                    <div class="col-md-10">
+                                        <textarea id="indications" style="height:80px" type="text" class="form-control col-md-12" name="indications" value=""  data-bv-notempty data-bv-notempty-message="必填项"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 form-group has-require">
+                                    <label class="col-md-6">注册批准日:</label>
+                                    <div class="col-md-6">
+                                        <input id="RegistrationDate" type="text" class="form-control timePicker" name="registrationapproval" value=""  data-bv-notempty data-bv-notempty-message="必填项">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <label class="col-md-6">首次销售时间:</label>
+                                    <div class="col-md-6">
+                                        <input id="firstSaleDate" type="text" class="form-control timePicker" name="marketatthefirstdate" value="" >
+                                    </div>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <label class="col-md-6">换证日期:</label>
+                                    <div class="col-md-6">
+                                        <input id="changeIDDate" type="text" class="form-control timePicker" name="renewaldate" value=""  >
+                                    </div>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <label class="col-md-6">给药途径:</label>
+                                    <div class="col-md-6">
+                                        <input id="medicalWay" type="text" class="form-control" name="usagemode" value=""  >
+                                    </div>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <label class="col-md-6">治疗人群:</label>
+                                    <div class="col-md-6">
+                                        <input id="curePeople" type="text" class="form-control" name="treatmentpopulations" value=""  >
+                                    </div>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <label class="col-md-6">汉语拼音:</label>
+                                    <div class="col-md-6">
+                                        <input id="chiesePIN" type="text" class="form-control" name="spell" value=""  >
+                                    </div>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <label class="col-md-6">化学名:</label>
+                                    <div class="col-md-6">
+                                        <input id="chemicalName" type="text" class="form-control" name="dutasteride" value=""  >
+                                    </div>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <label class="col-md-6">分子式:</label>
+                                    <div class="col-md-6">
+                                        <input id="formula" type="text" class="form-control" name="molecularformula" value=""  >
+                                    </div>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <label class="col-md-6">分子量:</label>
+                                    <div class="col-md-6">
+                                        <input id="molecularWei" type="text" class="form-control" name="molecularweight" value=""  >
+                                    </div>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <label class="col-md-6">性状:</label>
+                                    <div class="col-md-6">
+                                        <input id="character" type="text" class="form-control" name="character" value=""  >
+                                    </div>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <label class="col-md-6">批准文号到期日:</label>
+                                    <div class="col-md-6">
+                                        <input id="ApprovalDueDate" type="text" class="form-control timePicker" name="idalexpirydate" value=""  >
+                                    </div>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <label class="col-md-6">国家:</label>
+                                    <div class="col-md-6">
+                                        <input id="country" type="text" class="form-control" name="country" value=""  >
+                                    </div>
+                                </div>
+                                <div class="col-md-12 form-group has-require">
+                                    <label class="col-md-2">不良反应:</label>
+                                    <div class="col-md-10">
+                                        <textarea id="adverseEvent" style="height:180px" type="text" class="form-control col-md-12" name="adverseeventcomment" value=""  data-bv-notempty data-bv-notempty-message="必填项"></textarea>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion"href="#collapse3">药品管理状态</a>
+                        </h4>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <form id="formMedical">
+                                <div class="col-md-6 form-group">
+                                    <label class="col-md-6">国家基本药物:</label>
+                                    <div class="col-md-6">
+                                        <label ><input type="radio" name="nationalessentialdrugs" value="0">否</label>
+                                        <label ><input type="radio" name="nationalessentialdrugs" value="1">是</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <label class="col-md-6">国家医疗保险药品:</label>
+                                    <div class="col-md-6">
+                                        <label ><input type="radio" name="nationalmedicalinsurancedrugs" value="0">否</label>
+                                        <label ><input type="radio" name="nationalmedicalinsurancedrugs" value="1">是</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <label class="col-md-6">国家非处方药:</label>
+                                    <div class="col-md-6">
+                                        <label ><input type="radio" name="nationaloverthecounterdrugs" value="0">否</label>
+                                        <label ><input type="radio" name="nationaloverthecounterdrugs" value="1">是</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <label class="col-md-6">中药保护品种:</label>
+                                    <div class="col-md-6">
+                                        <label ><input type="radio" name="protectedtcm" value="0">否</label>
+                                        <label ><input type="radio" name="protectedtcm" value="1">是</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <label class="col-md-6">注册时间:</label>
+                                    <div class="col-md-6">
+                                        <input id="regdate" type="text" class="form-control timePicker" name="regdate" value=""  >
+                                    </div>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <label class="col-md-6">国际诞生日:</label>
+                                    <div class="col-md-6">
+                                        <input id="internationaldayofbirth" type="text" class="form-control timePicker" name="internationaldayofbirth" value=""  >
+                                    </div>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <label class="col-md-6">国内首次注册日期:</label>
+                                    <div class="col-md-6">
+                                        <input id="internalregistrationtimeforthefirst" type="text" class="form-control timePicker" name="internalregistrationtimeforthefirst" value=""  >
+                                    </div>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <label class="col-md-6">新药监测期截止时间:</label>
+                                    <div class="col-md-6">
+                                        <input id="newdrugmonitoringdeadline" type="text" class="form-control timePicker" name="newdrugmonitoringdeadline" value=""  >
+                                    </div>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <label class="col-md-6">首次再注册时间:</label>
+                                    <div class="col-md-6">
+                                        <input id="registrationtimeagainforthefirsttime" type="text" class="form-control timePicker" name="registrationtimeagainforthefirsttime" value=""  >
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion"href="#collapse2">附件管理</a>
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <table id="fileTable">
+                                <thead>
+                                <tr>
+                                    <th data-field="">名称</th>
+                                    <th data-field="">大小</th>
+                                    <th data-field="">分类</th>
+                                    <th data-field="">类别</th>
+                                    <th data-field="" data-formatter="">上传时间</th>
+                                    <th data-field="" data-formatter="">操作</th>
+                                </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-sm saveNewProduct">确 定</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--不良反应新增编辑弹窗-->
+<div class="modal fade " id="AEmodal" tabindex="1" data-backdrop="static" role="dialog" >
+    <div class="modal-dialog modal-md">
+        <div class="modal-content" >
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title" id="">不良反应</h4>
+            </div>
+            <div class="">
+                <form id="AEform" class="clearfix" style="padding: 8px;">
+                    <div class="col-md-12 form-group has-require">
+                        <label class="col-md-4">不良反应名称 :</label>
+                        <div class="col-md-6">
+                            <input id="AEname" type="text" class="form-control has-error" name="name" value=""  data-bv-notempty data-bv-notempty-message="请填写不良反应名称">
+                        </div>
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <label class="col-md-4">首选术语 :</label>
+                        <div class="col-md-6">
+                            <input id="ptname" readonly type="text" class="form-control " name="ptname" value=""  >
+                        </div>
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <label class="col-md-4">首选术语编码值 :</label>
+                        <div class="col-md-6">
+                            <input id="ptcode" readonly type="text" class="form-control " name="ptcode" value=""  >
+                        </div>
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <label class="col-md-4">发生率 :</label>
+                        <div class="col-md-6">
+                            <input id="adversetype"  type="text" class="form-control " name="adversetype" value=""  >
+                        </div>
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <label class="col-md-4">备注 :</label>
+                        <div class="col-md-6">
+                            <textarea id="mark" style="height:120px"  class="form-control " name="mark" value=""  ></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-sm saveNewAE">确 定</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 添加当前模板js -->
+<link rel="import"  href="../base/footer.html?__inline">
+<link rel="import" href="../base/_footer_js.html?__inline">
+<script src="../assets/js/pages/information/saleProductInfo.js"></script>
+</body>
+</html>

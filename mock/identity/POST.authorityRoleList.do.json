@@ -1,0 +1,704 @@
+{
+  "userIdList": [],
+  "rightList": [],
+  "authorityList": [
+    {
+      "id": "1",
+      "roleName": "A",
+      "roleMemo": "Amemoemo",
+      "userIdList": [],
+      "rightList": [],
+      "authorityList": [],
+      "authorityRoleRightList": [],
+      "authorityRightList": [
+        {
+          "id": 1,
+          "tenantId": "tm",
+          "rightPid": "0",
+          "rightNid": "1",
+          "rightName": "工时计划"
+        },
+        {
+          "id": 2,
+          "tenantId": "tm",
+          "rightPid": "1",
+          "rightNid": "2",
+          "rightName": "只查看"
+        },
+        {
+          "id": 3,
+          "tenantId": "tm",
+          "rightPid": "1",
+          "rightNid": "3",
+          "rightName": "更新版本"
+        },
+        {
+          "id": 4,
+          "tenantId": "tm",
+          "rightPid": "1",
+          "rightNid": "4",
+          "rightName": "只编辑任务"
+        },
+        {
+          "id": 5,
+          "tenantId": "tm",
+          "rightPid": "1",
+          "rightNid": "5",
+          "rightName": "提交"
+        },
+        {
+          "id": 6,
+          "tenantId": "tm",
+          "rightPid": "1",
+          "rightNid": "6",
+          "rightName": "导出"
+        },
+        {
+          "id": 7,
+          "tenantId": "tm",
+          "rightPid": "0",
+          "rightNid": "7",
+          "rightName": "工时填报"
+        },
+        {
+          "id": 8,
+          "tenantId": "tm",
+          "rightPid": "7",
+          "rightNid": "8",
+          "rightName": "只查看"
+        },
+        {
+          "id": 9,
+          "tenantId": "tm",
+          "rightPid": "7",
+          "rightNid": "9",
+          "rightName": "编辑"
+        },
+        {
+          "id": 10,
+          "tenantId": "tm",
+          "rightPid": "7",
+          "rightNid": "10",
+          "rightName": "提交"
+        },
+        {
+          "id": 11,
+          "tenantId": "tm",
+          "rightPid": "0",
+          "rightNid": "11",
+          "rightName": "工时统计"
+        },
+        {
+          "id": 12,
+          "tenantId": "tm",
+          "rightPid": "11",
+          "rightNid": "12",
+          "rightName": "只查看"
+        },
+        {
+          "id": 13,
+          "tenantId": "tm",
+          "rightPid": "11",
+          "rightNid": "13",
+          "rightName": "导出"
+        },
+        {
+          "id": 14,
+          "tenantId": "tm",
+          "rightPid": "0",
+          "rightNid": "14",
+          "rightName": "基础设置"
+        },
+        {
+          "id": 15,
+          "tenantId": "tm",
+          "rightPid": "14",
+          "rightNid": "15",
+          "rightName": "规则设置"
+        },
+        {
+          "id": 16,
+          "tenantId": "tm",
+          "rightPid": "15",
+          "rightNid": "16",
+          "rightName": "只查看"
+        },
+        {
+          "id": 17,
+          "tenantId": "tm",
+          "rightPid": "15",
+          "rightNid": "17",
+          "rightName": "编辑"
+        },
+        {
+          "id": 18,
+          "tenantId": "tm",
+          "rightPid": "15",
+          "rightNid": "18",
+          "rightName": "导出"
+        },
+        {
+          "id": 19,
+          "tenantId": "tm",
+          "rightPid": "14",
+          "rightNid": "19",
+          "rightName": "任务配置"
+        },
+        {
+          "id": 20,
+          "tenantId": "tm",
+          "rightPid": "19",
+          "rightNid": "20",
+          "rightName": "只查看"
+        },
+        {
+          "id": 21,
+          "tenantId": "tm",
+          "rightPid": "19",
+          "rightNid": "21",
+          "rightName": "编辑"
+        },
+        {
+          "id": 22,
+          "tenantId": "tm",
+          "rightPid": "14",
+          "rightNid": "22",
+          "rightName": "词典管理"
+        },
+        {
+          "id": 23,
+          "tenantId": "tm",
+          "rightPid": "22",
+          "rightNid": "23",
+          "rightName": "只查看"
+        },
+        {
+          "id": 24,
+          "tenantId": "tm",
+          "rightPid": "22",
+          "rightNid": "24",
+          "rightName": "编辑"
+        },
+        {
+          "id": 25,
+          "tenantId": "tm",
+          "rightPid": "14",
+          "rightNid": "25",
+          "rightName": "权限设置"
+        },
+        {
+          "id": 26,
+          "tenantId": "tm",
+          "rightPid": "25",
+          "rightNid": "26",
+          "rightName": "只查看"
+        },
+        {
+          "id": 27,
+          "tenantId": "tm",
+          "rightPid": "25",
+          "rightNid": "27",
+          "rightName": "编辑角色"
+        },
+        {
+          "id": 28,
+          "tenantId": "tm",
+          "rightPid": "25",
+          "rightNid": "28",
+          "rightName": "编辑权限"
+        }
+      ],
+      "authorityRoleUserList": [
+        {
+          "id": 1,
+          "roleId": 1,
+          "userId": "1"
+        },
+        {
+          "id": 2,
+          "roleId": 1,
+          "userId": "2"
+        },
+        {
+          "id": 3,
+          "roleId": 1,
+          "userId": "3"
+        },
+        {
+          "id": 4,
+          "roleId": 1,
+          "userId": "4"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "roleName": "B",
+      "roleMemo": "Bmemoemo",
+      "userIdList": [],
+      "rightList": [],
+      "authorityList": [],
+      "authorityRoleRightList": [
+        {
+          "id": 1,
+          "roleId": 2,
+          "rightId": 1
+        },
+        {
+          "id": 2,
+          "roleId": 2,
+          "rightId": 2
+        },
+        {
+          "id": 3,
+          "roleId": 2,
+          "rightId": 6
+        },
+        {
+          "id": 4,
+          "roleId": 2,
+          "rightId": 21
+        }
+      ],
+      "authorityRightList": [
+        {
+          "id": 1,
+          "tenantId": "tm",
+          "rightPid": "0",
+          "rightNid": "1",
+          "rightName": "工时计划"
+        },
+        {
+          "id": 2,
+          "tenantId": "tm",
+          "rightPid": "1",
+          "rightNid": "2",
+          "rightName": "只查看"
+        },
+        {
+          "id": 3,
+          "tenantId": "tm",
+          "rightPid": "1",
+          "rightNid": "3",
+          "rightName": "更新版本"
+        },
+        {
+          "id": 4,
+          "tenantId": "tm",
+          "rightPid": "1",
+          "rightNid": "4",
+          "rightName": "只编辑任务"
+        },
+        {
+          "id": 5,
+          "tenantId": "tm",
+          "rightPid": "1",
+          "rightNid": "5",
+          "rightName": "提交"
+        },
+        {
+          "id": 6,
+          "tenantId": "tm",
+          "rightPid": "1",
+          "rightNid": "6",
+          "rightName": "导出"
+        },
+        {
+          "id": 7,
+          "tenantId": "tm",
+          "rightPid": "0",
+          "rightNid": "7",
+          "rightName": "工时填报"
+        },
+        {
+          "id": 8,
+          "tenantId": "tm",
+          "rightPid": "7",
+          "rightNid": "8",
+          "rightName": "只查看"
+        },
+        {
+          "id": 9,
+          "tenantId": "tm",
+          "rightPid": "7",
+          "rightNid": "9",
+          "rightName": "编辑"
+        },
+        {
+          "id": 10,
+          "tenantId": "tm",
+          "rightPid": "7",
+          "rightNid": "10",
+          "rightName": "提交"
+        },
+        {
+          "id": 11,
+          "tenantId": "tm",
+          "rightPid": "0",
+          "rightNid": "11",
+          "rightName": "工时统计"
+        },
+        {
+          "id": 12,
+          "tenantId": "tm",
+          "rightPid": "11",
+          "rightNid": "12",
+          "rightName": "只查看"
+        },
+        {
+          "id": 13,
+          "tenantId": "tm",
+          "rightPid": "11",
+          "rightNid": "13",
+          "rightName": "导出"
+        },
+        {
+          "id": 14,
+          "tenantId": "tm",
+          "rightPid": "0",
+          "rightNid": "14",
+          "rightName": "基础设置"
+        },
+        {
+          "id": 15,
+          "tenantId": "tm",
+          "rightPid": "14",
+          "rightNid": "15",
+          "rightName": "规则设置"
+        },
+        {
+          "id": 16,
+          "tenantId": "tm",
+          "rightPid": "15",
+          "rightNid": "16",
+          "rightName": "只查看"
+        },
+        {
+          "id": 17,
+          "tenantId": "tm",
+          "rightPid": "15",
+          "rightNid": "17",
+          "rightName": "编辑"
+        },
+        {
+          "id": 18,
+          "tenantId": "tm",
+          "rightPid": "15",
+          "rightNid": "18",
+          "rightName": "导出"
+        },
+        {
+          "id": 19,
+          "tenantId": "tm",
+          "rightPid": "14",
+          "rightNid": "19",
+          "rightName": "任务配置"
+        },
+        {
+          "id": 20,
+          "tenantId": "tm",
+          "rightPid": "19",
+          "rightNid": "20",
+          "rightName": "只查看"
+        },
+        {
+          "id": 21,
+          "tenantId": "tm",
+          "rightPid": "19",
+          "rightNid": "21",
+          "rightName": "编辑"
+        },
+        {
+          "id": 22,
+          "tenantId": "tm",
+          "rightPid": "14",
+          "rightNid": "22",
+          "rightName": "词典管理"
+        },
+        {
+          "id": 23,
+          "tenantId": "tm",
+          "rightPid": "22",
+          "rightNid": "23",
+          "rightName": "只查看"
+        },
+        {
+          "id": 24,
+          "tenantId": "tm",
+          "rightPid": "22",
+          "rightNid": "24",
+          "rightName": "编辑"
+        },
+        {
+          "id": 25,
+          "tenantId": "tm",
+          "rightPid": "14",
+          "rightNid": "25",
+          "rightName": "权限设置"
+        },
+        {
+          "id": 26,
+          "tenantId": "tm",
+          "rightPid": "25",
+          "rightNid": "26",
+          "rightName": "只查看"
+        },
+        {
+          "id": 27,
+          "tenantId": "tm",
+          "rightPid": "25",
+          "rightNid": "27",
+          "rightName": "编辑角色"
+        },
+        {
+          "id": 28,
+          "tenantId": "tm",
+          "rightPid": "25",
+          "rightNid": "28",
+          "rightName": "编辑权限"
+        }
+      ],
+      "authorityRoleUserList": [
+        {
+          "id": 5,
+          "roleId": 2,
+          "userId": "1"
+        },
+        {
+          "id": 6,
+          "roleId": 2,
+          "userId": "2"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "roleName": "CCCCCC",
+      "roleMemo": "mmmmcccc",
+      "userIdList": [],
+      "rightList": [],
+      "authorityList": [],
+      "authorityRoleRightList": [],
+      "authorityRightList": [
+        {
+          "id": 1,
+          "tenantId": "tm",
+          "rightPid": "0",
+          "rightNid": "1",
+          "rightName": "工时计划"
+        },
+        {
+          "id": 2,
+          "tenantId": "tm",
+          "rightPid": "1",
+          "rightNid": "2",
+          "rightName": "只查看"
+        },
+        {
+          "id": 3,
+          "tenantId": "tm",
+          "rightPid": "1",
+          "rightNid": "3",
+          "rightName": "更新版本"
+        },
+        {
+          "id": 4,
+          "tenantId": "tm",
+          "rightPid": "1",
+          "rightNid": "4",
+          "rightName": "只编辑任务"
+        },
+        {
+          "id": 5,
+          "tenantId": "tm",
+          "rightPid": "1",
+          "rightNid": "5",
+          "rightName": "提交"
+        },
+        {
+          "id": 6,
+          "tenantId": "tm",
+          "rightPid": "1",
+          "rightNid": "6",
+          "rightName": "导出"
+        },
+        {
+          "id": 7,
+          "tenantId": "tm",
+          "rightPid": "0",
+          "rightNid": "7",
+          "rightName": "工时填报"
+        },
+        {
+          "id": 8,
+          "tenantId": "tm",
+          "rightPid": "7",
+          "rightNid": "8",
+          "rightName": "只查看"
+        },
+        {
+          "id": 9,
+          "tenantId": "tm",
+          "rightPid": "7",
+          "rightNid": "9",
+          "rightName": "编辑"
+        },
+        {
+          "id": 10,
+          "tenantId": "tm",
+          "rightPid": "7",
+          "rightNid": "10",
+          "rightName": "提交"
+        },
+        {
+          "id": 11,
+          "tenantId": "tm",
+          "rightPid": "0",
+          "rightNid": "11",
+          "rightName": "工时统计"
+        },
+        {
+          "id": 12,
+          "tenantId": "tm",
+          "rightPid": "11",
+          "rightNid": "12",
+          "rightName": "只查看"
+        },
+        {
+          "id": 13,
+          "tenantId": "tm",
+          "rightPid": "11",
+          "rightNid": "13",
+          "rightName": "导出"
+        },
+        {
+          "id": 14,
+          "tenantId": "tm",
+          "rightPid": "0",
+          "rightNid": "14",
+          "rightName": "基础设置"
+        },
+        {
+          "id": 15,
+          "tenantId": "tm",
+          "rightPid": "14",
+          "rightNid": "15",
+          "rightName": "规则设置"
+        },
+        {
+          "id": 16,
+          "tenantId": "tm",
+          "rightPid": "15",
+          "rightNid": "16",
+          "rightName": "只查看"
+        },
+        {
+          "id": 17,
+          "tenantId": "tm",
+          "rightPid": "15",
+          "rightNid": "17",
+          "rightName": "编辑"
+        },
+        {
+          "id": 18,
+          "tenantId": "tm",
+          "rightPid": "15",
+          "rightNid": "18",
+          "rightName": "导出"
+        },
+        {
+          "id": 19,
+          "tenantId": "tm",
+          "rightPid": "14",
+          "rightNid": "19",
+          "rightName": "任务配置"
+        },
+        {
+          "id": 20,
+          "tenantId": "tm",
+          "rightPid": "19",
+          "rightNid": "20",
+          "rightName": "只查看"
+        },
+        {
+          "id": 21,
+          "tenantId": "tm",
+          "rightPid": "19",
+          "rightNid": "21",
+          "rightName": "编辑"
+        },
+        {
+          "id": 22,
+          "tenantId": "tm",
+          "rightPid": "14",
+          "rightNid": "22",
+          "rightName": "词典管理"
+        },
+        {
+          "id": 23,
+          "tenantId": "tm",
+          "rightPid": "22",
+          "rightNid": "23",
+          "rightName": "只查看"
+        },
+        {
+          "id": 24,
+          "tenantId": "tm",
+          "rightPid": "22",
+          "rightNid": "24",
+          "rightName": "编辑"
+        },
+        {
+          "id": 25,
+          "tenantId": "tm",
+          "rightPid": "14",
+          "rightNid": "25",
+          "rightName": "权限设置"
+        },
+        {
+          "id": 26,
+          "tenantId": "tm",
+          "rightPid": "25",
+          "rightNid": "26",
+          "rightName": "只查看"
+        },
+        {
+          "id": 27,
+          "tenantId": "tm",
+          "rightPid": "25",
+          "rightNid": "27",
+          "rightName": "编辑角色"
+        },
+        {
+          "id": 28,
+          "tenantId": "tm",
+          "rightPid": "25",
+          "rightNid": "28",
+          "rightName": "编辑权限"
+        }
+      ],
+      "authorityRoleUserList": [
+        {
+          "id": 15,
+          "roleId": 3,
+          "userId": "1"
+        },
+        {
+          "id": 16,
+          "roleId": 3,
+          "userId": "2"
+        },
+        {
+          "id": 17,
+          "roleId": 3,
+          "userId": "7"
+        },
+        {
+          "id": 18,
+          "roleId": 3,
+          "userId": "8"
+        }
+      ]
+    }
+  ]
+}

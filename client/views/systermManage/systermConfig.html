@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link rel="import" href="../base/_header_css.html?__inline">
+</head>
+<body>
+<link rel="import" href="../base/header.html?__inline">
+<div class="content">
+    <div class="position">当前位置：
+        <span >系统管理</span>
+        <span style="padding: 0 5px;">&gt;</span>
+        <span >系统配置</span>
+    </div>
+    <div >
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation"  onclick="initTabPageList()"><a href="#tabPageTab" aria-controls="tabPageTab" role="tab" data-toggle="tab" >页面管理</a></li>
+            <li role="presentation"  onclick="initMenuList()"><a href="#menuListTab" aria-controls="menuListTab" role="tab" data-toggle="tab" >菜单配置</a></li>
+            <li role="presentation"  onclick="initBaseLineListing()"><a href="#BaseLineListingTab" aria-controls="BaseLineListingTab" role="tab" data-toggle="tab" >基础行管理</a></li>
+        </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade" id="tabPageTab">
+                <table id="tabPageList"></table>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="menuListTab">
+                <div class="panel panel-default menuListBox">
+                    <div class="panel-heading" style="text-align:right">
+                        <button type="button" class="btn btn-sm btn-primary addNewMenu" data-toggle="modal" data-target="#menuModal">新增</button>
+                    </div>
+                    <table id="menuList"></table>
+                </div>
+                <div class="panel panel-default secondMenuListBox" style="display:none">
+                    <div class="panel-heading" style="text-align:right">
+                        <button type="button" class="btn btn-sm btn-primary addNewSecondMenu" data-toggle="modal" data-target="#secondMenuModal">新增</button>
+                        <button type="button" class="btn btn-sm btn-primary returnMenu" >返回</button>
+                    </div>
+                    <table id="secondMenuList"></table>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="BaseLineListingTab">
+                <div class="panel panel-default menuListBox">
+                    <div class="panel-heading" style="text-align:right">
+                        <button type="button" class="btn btn-sm btn-primary addBaseLineListingTab" data-toggle="modal" data-target="#BaseLineListingModal">新增</button>
+                    </div>
+                    <table id="BaseLineListing"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 添加当前模板js -->
+<link rel="import" href="../base/footer.html?__inline">
+<link rel="import" href="../base/_footer_js.html?__inline">
+<script src="../../assets/js/pages/systermManage/systermConfig.js"></script>
+<link rel="import" href="modal/systermConfigModal.html?__inline">
+</body>
+</html>

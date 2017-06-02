@@ -1,0 +1,18 @@
+{
+  "planBriefApprovalList": [
+    {
+      "approvalId": 1,
+      "userId": "2",
+      "tenantId": "72012ed3-0a4f-45f8-ac16-f051a207895b",
+      "planVersionProjectId": "33333",
+      "planVersionVersionName": "1",
+      "approvalSubmitUser": "2",
+      "approvalCreateTime": "20130101",
+      "planVersionStudyStage": "planName3",
+      "planVersionManageName": "manager3",
+      "approvalSubmitStatus": "1",
+      "approvalFinishTime": "20130202"
+    }
+  ],
+  "total": 1
+}
